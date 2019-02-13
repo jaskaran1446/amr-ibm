@@ -220,15 +220,15 @@ class BiaffineParser(object):
         pred_arcs = arc_logits.data.max(2)[1].cpu()
         true_arcs = pad_sequence(true_arcs, padding=-1, dtype=np.int64)
         correct = pred_arcs.eq(true_arcs).cpu().sum()
-        arc_accuracy = (correct /
-                        (b * l1 - np.sum(true_arcs.cpu().numpy() == -1)))
+        tmp = torch.LongTensor([(b * l1 - np.sum(true_arcs.cpu().numpy() == -1))])
+        arc_accuracy = (correct.item() / tmp.item())
 
         b, l1, d = label_logits.size()
         pred_labels = label_logits.data.max(2)[1].cpu()
         true_labels = pad_sequence(true_labels, padding=-1, dtype=np.int64)
         correct = pred_labels.eq(true_labels).cpu().sum()
-        label_accuracy = (correct /
-                          (b * l1 - np.sum(true_labels.cpu().numpy() == -1)))
+        tmp = torch.LongTensor([(b * l1 - np.sum(true_labels.cpu().numpy() == -1))])
+        label_accuracy = (correct.item() /tmp.item() )
 
         accuracy = (arc_accuracy + label_accuracy) / 2
         return accuracy
