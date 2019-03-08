@@ -1,0 +1,1075 @@
+*** Parser ***
+Bucket Sents-0 is 1143 x 3
+Bucket Sents-1 is 492 x 4
+Bucket Sents-2 is 370 x 5
+Bucket Sents-3 is 419 x 6
+Bucket Sents-4 is 446 x 7
+Bucket Sents-5 is 435 x 8
+Bucket Sents-6 is 429 x 9
+Bucket Sents-7 is 454 x 10
+Bucket Sents-8 is 471 x 11
+Bucket Sents-9 is 489 x 12
+Bucket Sents-10 is 473 x 13
+Bucket Sents-11 is 420 x 14
+Bucket Sents-12 is 439 x 15
+Bucket Sents-13 is 445 x 16
+Bucket Sents-14 is 408 x 17
+Bucket Sents-15 is 378 x 18
+Bucket Sents-16 is 374 x 19
+Bucket Sents-17 is 350 x 20
+Bucket Sents-18 is 356 x 21
+Bucket Sents-19 is 301 x 22
+Bucket Sents-20 is 313 x 23
+Bucket Sents-21 is 314 x 24
+Bucket Sents-22 is 258 x 25
+Bucket Sents-23 is 208 x 26
+Bucket Sents-24 is 220 x 27
+Bucket Sents-25 is 177 x 28
+Bucket Sents-26 is 180 x 29
+Bucket Sents-27 is 180 x 30
+Bucket Sents-28 is 135 x 31
+Bucket Sents-29 is 137 x 32
+Bucket Sents-30 is 111 x 33
+Bucket Sents-31 is 119 x 34
+Bucket Sents-32 is 100 x 35
+Bucket Sents-33 is 78 x 36
+Bucket Sents-34 is 75 x 37
+Bucket Sents-35 is 87 x 38
+Bucket Sents-36 is 72 x 39
+Bucket Sents-37 is 135 x 41
+Bucket Sents-38 is 259 x 48
+Bucket Sents-39 is 293 x 160
+Bucket Sents-0 is 237 x 3
+Bucket Sents-1 is 227 x 5
+Bucket Sents-2 is 210 x 7
+Bucket Sents-3 is 215 x 9
+Bucket Sents-4 is 173 x 11
+Bucket Sents-5 is 160 x 13
+Bucket Sents-6 is 193 x 16
+Bucket Sents-7 is 215 x 21
+Bucket Sents-8 is 177 x 28
+Bucket Sents-9 is 194 x 76
+Bucket Sents-0 is 288 x 3
+Bucket Sents-1 is 254 x 5
+Bucket Sents-2 is 217 x 7
+Bucket Sents-3 is 111 x 8
+Bucket Sents-4 is 204 x 10
+Bucket Sents-5 is 229 x 13
+Bucket Sents-6 is 196 x 16
+Bucket Sents-7 is 183 x 20
+Bucket Sents-8 is 197 x 27
+Bucket Sents-9 is 198 x 82
+RNN0/BiRNN_FW/LSTMCell/Linear
+Orthogonal pretrainer loss: 5.55e-27
+RNN0/BiRNN_BW/LSTMCell/Linear
+Orthogonal pretrainer loss: 6.95e-27
+RNN1/BiRNN_FW/LSTMCell/Linear
+Orthogonal pretrainer loss: 1.83e-30
+RNN1/BiRNN_BW/LSTMCell/Linear
+Orthogonal pretrainer loss: 1.64e-30
+RNN2/BiRNN_FW/LSTMCell/Linear
+Orthogonal pretrainer loss: 1.67e-30
+RNN2/BiRNN_BW/LSTMCell/Linear
+Orthogonal pretrainer loss: 1.69e-30
+MLP/Linear
+Orthogonal pretrainer loss: 3.87e-23
+   100) Train loss: 7.1812    Train acc:  0.00%    Train rate: 1263.4 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2644.8 sents/sec
+   200) Train loss: 7.1917    Train acc:  0.00%    Train rate: 2119.4 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2575.5 sents/sec
+   300) Train loss: 7.2242    Train acc:  0.00%    Train rate: 2104.1 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2541.1 sents/sec
+   400) Train loss: 7.1940    Train acc:  0.00%    Train rate: 2183.4 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2913.9 sents/sec
+   500) Train loss: 7.1723    Train acc:  0.00%    Train rate: 2405.8 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3063.4 sents/sec
+   600) Train loss: 7.2798    Train acc:  0.00%    Train rate: 2201.0 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3150.1 sents/sec
+   700) Train loss: 7.1567    Train acc:  0.00%    Train rate: 2591.5 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3180.3 sents/sec
+   800) Train loss: 7.2028    Train acc:  0.00%    Train rate: 2390.8 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2984.5 sents/sec
+   900) Train loss: 7.1516    Train acc:  0.00%    Train rate: 2460.3 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2659.7 sents/sec
+  1000) Train loss: 7.2221    Train acc:  0.00%    Train rate: 2043.1 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2526.0 sents/sec
+  1100) Train loss: 7.2273    Train acc:  0.00%    Train rate: 2326.4 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3245.7 sents/sec
+  1200) Train loss: 7.2168    Train acc:  0.00%    Train rate: 2340.9 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3080.8 sents/sec
+  1300) Train loss: 7.1759    Train acc:  0.00%    Train rate: 2519.6 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3001.2 sents/sec
+  1400) Train loss: 7.1336    Train acc:  0.00%    Train rate: 2705.1 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3459.6 sents/sec
+  1500) Train loss: 7.1869    Train acc:  0.00%    Train rate: 2457.3 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3103.6 sents/sec
+  1600) Train loss: 7.1946    Train acc:  0.00%    Train rate: 2223.3 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2785.8 sents/sec
+  1700) Train loss: 7.2293    Train acc:  0.00%    Train rate: 2078.1 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2985.5 sents/sec
+  1800) Train loss: 7.2421    Train acc:  0.00%    Train rate: 2062.1 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2670.0 sents/sec
+  1900) Train loss: 7.1928    Train acc:  0.00%    Train rate: 2214.5 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2650.2 sents/sec
+  2000) Train loss: 7.1902    Train acc:  0.00%    Train rate: 2358.8 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3218.6 sents/sec
+  2100) Train loss: 7.1758    Train acc:  0.00%    Train rate: 2528.5 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3275.3 sents/sec
+  2200) Train loss: 7.1985    Train acc:  0.00%    Train rate: 2463.0 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3207.0 sents/sec
+  2300) Train loss: 7.1719    Train acc:  0.00%    Train rate: 2531.3 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3372.1 sents/sec
+  2400) Train loss: 7.2355    Train acc:  0.00%    Train rate: 2333.1 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3177.0 sents/sec
+  2500) Train loss: 7.2006    Train acc:  0.00%    Train rate: 2315.7 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2756.7 sents/sec
+  2600) Train loss: 7.1737    Train acc:  0.00%    Train rate: 2381.1 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3340.6 sents/sec
+  2700) Train loss: 7.2215    Train acc:  0.00%    Train rate: 2400.7 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3061.9 sents/sec
+  2800) Train loss: 7.2045    Train acc:  0.00%    Train rate: 2394.0 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2947.1 sents/sec
+  2900) Train loss: 7.2018    Train acc:  0.00%    Train rate: 2465.4 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3070.6 sents/sec
+  3000) Train loss: 7.1919    Train acc:  0.00%    Train rate: 2547.2 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3020.7 sents/sec
+  3100) Train loss: 7.2222    Train acc:  0.00%    Train rate: 2191.6 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2775.7 sents/sec
+  3200) Train loss: 7.1626    Train acc:  0.00%    Train rate: 2240.9 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2651.1 sents/sec
+  3300) Train loss: 7.2170    Train acc:  0.00%    Train rate: 2147.2 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2830.5 sents/sec
+  3400) Train loss: 7.1514    Train acc:  0.00%    Train rate: 2522.9 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3469.2 sents/sec
+  3500) Train loss: 7.2263    Train acc:  0.00%    Train rate: 2347.4 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3182.4 sents/sec
+  3600) Train loss: 7.1969    Train acc:  0.00%    Train rate: 2476.7 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3301.6 sents/sec
+  3700) Train loss: 7.1648    Train acc:  0.00%    Train rate: 2533.4 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3191.9 sents/sec
+  3800) Train loss: 7.2700    Train acc:  0.00%    Train rate: 2089.3 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3164.0 sents/sec
+  3900) Train loss: 7.1473    Train acc:  0.00%    Train rate: 2326.1 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2582.4 sents/sec
+  4000) Train loss: 7.2643    Train acc:  0.00%    Train rate: 2004.8 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2633.9 sents/sec
+  4100) Train loss: 7.1206    Train acc:  0.00%    Train rate: 2437.8 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2705.9 sents/sec
+  4200) Train loss: 7.2276    Train acc:  0.00%    Train rate: 2231.3 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3309.9 sents/sec
+  4300) Train loss: 7.1683    Train acc:  0.00%    Train rate: 2592.0 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3326.5 sents/sec
+  4400) Train loss: 7.2168    Train acc:  0.00%    Train rate: 2389.0 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3442.3 sents/sec
+  4500) Train loss: 7.2466    Train acc:  0.00%    Train rate: 2352.0 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3524.4 sents/sec
+  4600) Train loss: 7.1099    Train acc:  0.00%    Train rate: 2801.6 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3280.0 sents/sec
+  4700) Train loss: 7.2318    Train acc:  0.00%    Train rate: 2213.0 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2740.2 sents/sec
+  4800) Train loss: 7.1999    Train acc:  0.00%    Train rate: 2121.7 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2716.9 sents/sec
+  4900) Train loss: 7.2134    Train acc:  0.00%    Train rate: 2103.3 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2631.9 sents/sec
+  5000) Train loss: 7.2129    Train acc:  0.00%    Train rate: 2168.4 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3312.8 sents/sec
+  5100) Train loss: 7.1907    Train acc:  0.00%    Train rate: 2407.2 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3014.9 sents/sec
+  5200) Train loss: 7.1837    Train acc:  0.00%    Train rate: 2504.0 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3002.2 sents/sec
+  5300) Train loss: 7.2199    Train acc:  0.00%    Train rate: 2365.3 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3307.5 sents/sec
+  5400) Train loss: 7.2053    Train acc:  0.00%    Train rate: 2434.0 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3323.5 sents/sec
+  5500) Train loss: 7.1870    Train acc:  0.00%    Train rate: 2525.1 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3386.5 sents/sec
+  5600) Train loss: 7.2484    Train acc:  0.00%    Train rate: 2099.9 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2691.2 sents/sec
+  5700) Train loss: 7.1373    Train acc:  0.00%    Train rate: 2335.8 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2803.3 sents/sec
+  5800) Train loss: 7.2024    Train acc:  0.00%    Train rate: 2116.7 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2659.7 sents/sec
+  5900) Train loss: 7.1976    Train acc:  0.00%    Train rate: 2413.6 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3366.9 sents/sec
+  6000) Train loss: 7.2596    Train acc:  0.00%    Train rate: 2263.1 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3158.2 sents/sec
+  6100) Train loss: 7.2090    Train acc:  0.00%    Train rate: 2398.2 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3210.6 sents/sec
+  6200) Train loss: 7.1932    Train acc:  0.00%    Train rate: 2500.9 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3370.0 sents/sec
+  6300) Train loss: 7.1194    Train acc:  0.00%    Train rate: 2655.1 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3147.1 sents/sec
+  6400) Train loss: 7.2887    Train acc:  0.00%    Train rate: 2047.0 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2638.6 sents/sec
+  6500) Train loss: 7.1747    Train acc:  0.00%    Train rate: 2174.7 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2694.2 sents/sec
+  6600) Train loss: 7.1365    Train acc:  0.00%    Train rate: 2388.4 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2800.8 sents/sec
+  6700) Train loss: 7.2280    Train acc:  0.00%    Train rate: 2044.0 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2686.1 sents/sec
+  6800) Train loss: 7.1580    Train acc:  0.00%    Train rate: 2518.8 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3342.6 sents/sec
+  6900) Train loss: 7.2918    Train acc:  0.00%    Train rate: 2136.5 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2968.2 sents/sec
+  7000) Train loss: 7.1097    Train acc:  0.00%    Train rate: 2759.8 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3301.3 sents/sec
+  7100) Train loss: 7.2423    Train acc:  0.00%    Train rate: 2306.7 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3182.9 sents/sec
+  7200) Train loss: 7.1905    Train acc:  0.00%    Train rate: 2526.2 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3100.1 sents/sec
+  7300) Train loss: 7.2027    Train acc:  0.00%    Train rate: 2238.3 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2778.3 sents/sec
+  7400) Train loss: 7.1762    Train acc:  0.00%    Train rate: 2236.5 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2663.5 sents/sec
+  7500) Train loss: 7.2245    Train acc:  0.00%    Train rate: 2166.9 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3400.5 sents/sec
+  7600) Train loss: 7.2025    Train acc:  0.00%    Train rate: 2400.8 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3260.8 sents/sec
+  7700) Train loss: 7.2342    Train acc:  0.00%    Train rate: 2303.6 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3270.2 sents/sec
+  7800) Train loss: 7.1476    Train acc:  0.00%    Train rate: 2601.4 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3057.5 sents/sec
+  7900) Train loss: 7.1653    Train acc:  0.00%    Train rate: 2614.2 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3066.4 sents/sec
+  8000) Train loss: 7.2293    Train acc:  0.00%    Train rate: 2365.6 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2650.8 sents/sec
+  8100) Train loss: 7.1698    Train acc:  0.00%    Train rate: 2237.5 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2644.2 sents/sec
+  8200) Train loss: 7.2161    Train acc:  0.00%    Train rate: 2086.3 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2732.9 sents/sec
+  8300) Train loss: 7.2008    Train acc:  0.00%    Train rate: 2123.2 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2613.2 sents/sec
+  8400) Train loss: 7.1563    Train acc:  0.00%    Train rate: 2581.0 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3104.1 sents/sec
+  8500) Train loss: 7.1710    Train acc:  0.00%    Train rate: 2477.1 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3246.9 sents/sec
+  8600) Train loss: 7.2734    Train acc:  0.00%    Train rate: 2237.8 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3191.9 sents/sec
+  8700) Train loss: 7.1842    Train acc:  0.00%    Train rate: 2507.8 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3489.6 sents/sec
+  8800) Train loss: 7.1905    Train acc:  0.00%    Train rate: 2513.4 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2810.4 sents/sec
+  8900) Train loss: 7.1985    Train acc:  0.00%    Train rate: 2155.2 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2616.6 sents/sec
+  9000) Train loss: 7.2256    Train acc:  0.00%    Train rate: 2146.6 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2869.9 sents/sec
+  9100) Train loss: 7.1941    Train acc:  0.00%    Train rate: 2128.2 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2890.7 sents/sec
+  9200) Train loss: 7.1822    Train acc:  0.00%    Train rate: 2492.8 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3220.2 sents/sec
+  9300) Train loss: 7.2339    Train acc:  0.00%    Train rate: 2335.3 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3155.7 sents/sec
+  9400) Train loss: 7.1700    Train acc:  0.00%    Train rate: 2529.8 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3020.3 sents/sec
+  9500) Train loss: 7.1749    Train acc:  0.00%    Train rate: 2583.3 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3075.5 sents/sec
+  9600) Train loss: 7.2441    Train acc:  0.00%    Train rate: 2234.3 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3039.4 sents/sec
+  9700) Train loss: 7.1880    Train acc:  0.00%    Train rate: 2205.7 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2724.2 sents/sec
+  9800) Train loss: 7.1956    Train acc:  0.00%    Train rate: 2147.3 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2637.1 sents/sec
+  9900) Train loss: 7.1862    Train acc:  0.00%    Train rate: 2174.7 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2556.6 sents/sec
+ 10000) Train loss: 7.1779    Train acc:  0.00%    Train rate: 2129.6 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3128.7 sents/sec
+ 10100) Train loss: 7.2214    Train acc:  0.00%    Train rate: 2433.0 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3117.7 sents/sec
+ 10200) Train loss: 7.1864    Train acc:  0.00%    Train rate: 2364.8 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2957.3 sents/sec
+ 10300) Train loss: 7.1497    Train acc:  0.00%    Train rate: 2727.7 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2943.4 sents/sec
+ 10400) Train loss: 7.2323    Train acc:  0.00%    Train rate: 2337.0 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3223.6 sents/sec
+ 10500) Train loss: 7.2135    Train acc:  0.00%    Train rate: 2412.6 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3140.2 sents/sec
+ 10600) Train loss: 7.2023    Train acc:  0.00%    Train rate: 2272.7 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2756.5 sents/sec
+ 10700) Train loss: 7.1653    Train acc:  0.00%    Train rate: 2257.0 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2726.5 sents/sec
+ 10800) Train loss: 7.2304    Train acc:  0.00%    Train rate: 2095.5 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2640.0 sents/sec
+ 10900) Train loss: 7.2768    Train acc:  0.00%    Train rate: 1935.1 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2820.0 sents/sec
+ 11000) Train loss: 7.1152    Train acc:  0.00%    Train rate: 2481.4 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3167.7 sents/sec
+ 11100) Train loss: 7.2274    Train acc:  0.00%    Train rate: 2358.5 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3346.8 sents/sec
+ 11200) Train loss: 7.2312    Train acc:  0.00%    Train rate: 2428.2 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3505.0 sents/sec
+ 11300) Train loss: 7.1686    Train acc:  0.00%    Train rate: 2470.7 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3134.4 sents/sec
+ 11400) Train loss: 7.1584    Train acc:  0.00%    Train rate: 2624.3 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3240.7 sents/sec
+ 11500) Train loss: 7.2287    Train acc:  0.00%    Train rate: 2359.3 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2582.6 sents/sec
+ 11600) Train loss: 7.1486    Train acc:  0.00%    Train rate: 2293.3 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2756.3 sents/sec
+ 11700) Train loss: 7.2218    Train acc:  0.00%    Train rate: 2107.2 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2632.1 sents/sec
+ 11800) Train loss: 7.1599    Train acc:  0.00%    Train rate: 2409.3 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3319.1 sents/sec
+ 11900) Train loss: 7.2439    Train acc:  0.00%    Train rate: 2286.4 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3346.1 sents/sec
+ 12000) Train loss: 7.2209    Train acc:  0.00%    Train rate: 2333.5 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3087.6 sents/sec
+ 12100) Train loss: 7.2077    Train acc:  0.00%    Train rate: 2422.9 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3294.6 sents/sec
+ 12200) Train loss: 7.1792    Train acc:  0.00%    Train rate: 2532.4 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3159.3 sents/sec
+ 12300) Train loss: 7.1944    Train acc:  0.00%    Train rate: 2337.0 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2649.1 sents/sec
+ 12400) Train loss: 7.2355    Train acc:  0.00%    Train rate: 2034.5 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2718.4 sents/sec
+ 12500) Train loss: 7.2024    Train acc:  0.00%    Train rate: 2159.0 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2719.1 sents/sec
+ 12600) Train loss: 7.1868    Train acc:  0.00%    Train rate: 2264.3 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3252.2 sents/sec
+ 12700) Train loss: 7.1519    Train acc:  0.00%    Train rate: 2638.6 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3241.9 sents/sec
+ 12800) Train loss: 7.2222    Train acc:  0.00%    Train rate: 2372.6 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2975.9 sents/sec
+ 12900) Train loss: 7.1864    Train acc:  0.00%    Train rate: 2510.9 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3382.2 sents/sec
+ 13000) Train loss: 7.1764    Train acc:  0.00%    Train rate: 2489.9 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2860.0 sents/sec
+ 13100) Train loss: 7.2631    Train acc:  0.00%    Train rate: 2191.9 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2726.3 sents/sec
+ 13200) Train loss: 7.1770    Train acc:  0.00%    Train rate: 2270.6 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2665.8 sents/sec
+ 13300) Train loss: 7.1382    Train acc:  0.00%    Train rate: 2297.3 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2702.9 sents/sec
+ 13400) Train loss: 7.2763    Train acc:  0.00%    Train rate: 1907.5 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2693.5 sents/sec
+ 13500) Train loss: 7.1609    Train acc:  0.00%    Train rate: 2229.3 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2828.9 sents/sec
+ 13600) Train loss: 7.2216    Train acc:  0.00%    Train rate: 2135.7 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2614.8 sents/sec
+ 13700) Train loss: 7.1281    Train acc:  0.00%    Train rate: 2433.5 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3080.3 sents/sec
+ 13800) Train loss: 7.2696    Train acc:  0.00%    Train rate: 2286.8 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3187.4 sents/sec
+ 13900) Train loss: 7.1825    Train acc:  0.00%    Train rate: 2486.8 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3145.8 sents/sec
+ 14000) Train loss: 7.2229    Train acc:  0.00%    Train rate: 2442.9 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2924.1 sents/sec
+ 14100) Train loss: 7.1448    Train acc:  0.00%    Train rate: 2614.8 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3186.4 sents/sec
+ 14200) Train loss: 7.2170    Train acc:  0.00%    Train rate: 2407.2 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2692.7 sents/sec
+ 14300) Train loss: 7.1802    Train acc:  0.00%    Train rate: 2148.0 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2826.2 sents/sec
+ 14400) Train loss: 7.2492    Train acc:  0.00%    Train rate: 2030.8 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2682.3 sents/sec
+ 14500) Train loss: 7.1459    Train acc:  0.00%    Train rate: 2300.0 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2686.3 sents/sec
+ 14600) Train loss: 7.2372    Train acc:  0.00%    Train rate: 2013.4 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2884.4 sents/sec
+ 14700) Train loss: 7.1687    Train acc:  0.00%    Train rate: 2271.4 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2665.7 sents/sec
+ 14800) Train loss: 7.1976    Train acc:  0.00%    Train rate: 2455.2 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3085.1 sents/sec
+ 14900) Train loss: 7.1918    Train acc:  0.00%    Train rate: 2523.6 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3226.1 sents/sec
+ 15000) Train loss: 7.2015    Train acc:  0.00%    Train rate: 2447.4 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3372.4 sents/sec
+ 15100) Train loss: 7.2282    Train acc:  0.00%    Train rate: 2268.1 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2987.1 sents/sec
+ 15200) Train loss: 7.1831    Train acc:  0.00%    Train rate: 2545.7 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2565.4 sents/sec
+ 15300) Train loss: 7.1953    Train acc:  0.00%    Train rate: 2120.6 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2780.6 sents/sec
+ 15400) Train loss: 7.2114    Train acc:  0.00%    Train rate: 2115.0 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2744.3 sents/sec
+ 15500) Train loss: 7.1924    Train acc:  0.00%    Train rate: 2249.0 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3241.6 sents/sec
+ 15600) Train loss: 7.1776    Train acc:  0.00%    Train rate: 2479.7 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3330.5 sents/sec
+ 15700) Train loss: 7.2623    Train acc:  0.00%    Train rate: 2274.5 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3163.7 sents/sec
+ 15800) Train loss: 7.1728    Train acc:  0.00%    Train rate: 2544.8 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3205.1 sents/sec
+ 15900) Train loss: 7.1455    Train acc:  0.00%    Train rate: 2664.0 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3008.9 sents/sec
+ 16000) Train loss: 7.2327    Train acc:  0.00%    Train rate: 2253.7 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2659.1 sents/sec
+ 16100) Train loss: 7.2319    Train acc:  0.00%    Train rate: 2058.9 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2623.7 sents/sec
+ 16200) Train loss: 7.1280    Train acc:  0.00%    Train rate: 2363.4 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2600.7 sents/sec
+ 16300) Train loss: 7.1630    Train acc:  0.00%    Train rate: 2205.9 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2856.1 sents/sec
+ 16400) Train loss: 7.2655    Train acc:  0.00%    Train rate: 2184.5 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3320.8 sents/sec
+ 16500) Train loss: 7.2018    Train acc:  0.00%    Train rate: 2452.5 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3155.2 sents/sec
+ 16600) Train loss: 7.1996    Train acc:  0.00%    Train rate: 2410.0 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3143.0 sents/sec
+ 16700) Train loss: 7.1635    Train acc:  0.00%    Train rate: 2563.3 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3232.7 sents/sec
+ 16800) Train loss: 7.2403    Train acc:  0.00%    Train rate: 2341.2 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2915.2 sents/sec
+ 16900) Train loss: 7.1821    Train acc:  0.00%    Train rate: 2289.0 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2664.9 sents/sec
+ 17000) Train loss: 7.2085    Train acc:  0.00%    Train rate: 2148.5 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2881.5 sents/sec
+ 17100) Train loss: 7.1762    Train acc:  0.00%    Train rate: 2200.9 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2645.7 sents/sec
+ 17200) Train loss: 7.2102    Train acc:  0.00%    Train rate: 2284.5 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3396.5 sents/sec
+ 17300) Train loss: 7.2112    Train acc:  0.00%    Train rate: 2341.4 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3296.0 sents/sec
+ 17400) Train loss: 7.1996    Train acc:  0.00%    Train rate: 2437.9 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3065.3 sents/sec
+ 17500) Train loss: 7.1869    Train acc:  0.00%    Train rate: 2500.3 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3387.9 sents/sec
+ 17600) Train loss: 7.2429    Train acc:  0.00%    Train rate: 2219.6 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3358.7 sents/sec
+ 17700) Train loss: 7.1529    Train acc:  0.00%    Train rate: 2406.7 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2760.3 sents/sec
+ 17800) Train loss: 7.2175    Train acc:  0.00%    Train rate: 2136.7 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2644.5 sents/sec
+ 17900) Train loss: 7.1599    Train acc:  0.00%    Train rate: 2261.8 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2849.9 sents/sec
+ 18000) Train loss: 7.1902    Train acc:  0.00%    Train rate: 2176.3 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2897.3 sents/sec
+ 18100) Train loss: 7.2490    Train acc:  0.00%    Train rate: 2186.4 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3118.4 sents/sec
+ 18200) Train loss: 7.1831    Train acc:  0.00%    Train rate: 2470.3 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3028.1 sents/sec
+ 18300) Train loss: 7.1370    Train acc:  0.00%    Train rate: 2629.6 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3214.7 sents/sec
+ 18400) Train loss: 7.2679    Train acc:  0.00%    Train rate: 2255.6 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3016.7 sents/sec
+ 18500) Train loss: 7.1456    Train acc:  0.00%    Train rate: 2487.1 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2866.8 sents/sec
+ 18600) Train loss: 7.2480    Train acc:  0.00%    Train rate: 2065.7 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2738.3 sents/sec
+ 18700) Train loss: 7.2225    Train acc:  0.00%    Train rate: 2106.7 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2696.4 sents/sec
+ 18800) Train loss: 7.1642    Train acc:  0.00%    Train rate: 2433.0 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2906.9 sents/sec
+ 18900) Train loss: 7.2364    Train acc:  0.00%    Train rate: 2300.7 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2979.7 sents/sec
+ 19000) Train loss: 7.2051    Train acc:  0.00%    Train rate: 2479.5 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3139.5 sents/sec
+ 19100) Train loss: 7.1476    Train acc:  0.00%    Train rate: 2570.9 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3156.0 sents/sec
+ 19200) Train loss: 7.1992    Train acc:  0.00%    Train rate: 2449.4 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3055.0 sents/sec
+ 19300) Train loss: 7.2101    Train acc:  0.00%    Train rate: 2318.8 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2803.9 sents/sec
+ 19400) Train loss: 7.2275    Train acc:  0.00%    Train rate: 2078.7 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2669.6 sents/sec
+ 19500) Train loss: 7.1787    Train acc:  0.00%    Train rate: 2187.2 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2619.4 sents/sec
+ 19600) Train loss: 7.1938    Train acc:  0.00%    Train rate: 2188.5 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2984.2 sents/sec
+ 19700) Train loss: 7.1828    Train acc:  0.00%    Train rate: 2477.6 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3211.6 sents/sec
+ 19800) Train loss: 7.2190    Train acc:  0.00%    Train rate: 2367.0 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3217.7 sents/sec
+ 19900) Train loss: 7.1624    Train acc:  0.00%    Train rate: 2576.2 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3152.9 sents/sec
+ 20000) Train loss: 7.2403    Train acc:  0.00%    Train rate: 2228.7 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2910.9 sents/sec
+ 20100) Train loss: 7.1688    Train acc:  0.00%    Train rate: 2508.8 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2836.4 sents/sec
+ 20200) Train loss: 7.2224    Train acc:  0.00%    Train rate: 2088.8 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2584.9 sents/sec
+ 20300) Train loss: 7.1675    Train acc:  0.00%    Train rate: 2228.7 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2756.3 sents/sec
+ 20400) Train loss: 7.2079    Train acc:  0.00%    Train rate: 2190.3 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2796.1 sents/sec
+ 20500) Train loss: 7.2234    Train acc:  0.00%    Train rate: 2085.7 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2744.8 sents/sec
+ 20600) Train loss: 7.1949    Train acc:  0.00%    Train rate: 2306.5 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3036.0 sents/sec
+ 20700) Train loss: 7.2075    Train acc:  0.00%    Train rate: 2380.6 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3162.5 sents/sec
+ 20800) Train loss: 7.1437    Train acc:  0.00%    Train rate: 2645.4 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3188.6 sents/sec
+ 20900) Train loss: 7.2552    Train acc:  0.00%    Train rate: 2241.9 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3120.9 sents/sec
+ 21000) Train loss: 7.1814    Train acc:  0.00%    Train rate: 2483.9 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3081.5 sents/sec
+ 21100) Train loss: 7.2425    Train acc:  0.00%    Train rate: 2151.4 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2928.7 sents/sec
+ 21200) Train loss: 7.1561    Train acc:  0.00%    Train rate: 2240.9 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2765.8 sents/sec
+ 21300) Train loss: 7.1729    Train acc:  0.00%    Train rate: 2304.7 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2768.9 sents/sec
+ 21400) Train loss: 7.2267    Train acc:  0.00%    Train rate: 2118.7 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2583.5 sents/sec
+ 21500) Train loss: 7.1946    Train acc:  0.00%    Train rate: 2303.8 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3174.1 sents/sec
+ 21600) Train loss: 7.2008    Train acc:  0.00%    Train rate: 2377.4 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3094.6 sents/sec
+ 21700) Train loss: 7.2085    Train acc:  0.00%    Train rate: 2427.1 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3165.8 sents/sec
+ 21800) Train loss: 7.2028    Train acc:  0.00%    Train rate: 2339.2 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3168.5 sents/sec
+ 21900) Train loss: 7.2037    Train acc:  0.00%    Train rate: 2411.0 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2818.1 sents/sec
+ 22000) Train loss: 7.1890    Train acc:  0.00%    Train rate: 2168.5 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2757.4 sents/sec
+ 22100) Train loss: 7.1927    Train acc:  0.00%    Train rate: 2311.4 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2992.7 sents/sec
+ 22200) Train loss: 7.1911    Train acc:  0.00%    Train rate: 2458.7 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2880.6 sents/sec
+ 22300) Train loss: 7.1814    Train acc:  0.00%    Train rate: 2532.9 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2875.9 sents/sec
+ 22400) Train loss: 7.2032    Train acc:  0.00%    Train rate: 2449.0 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3191.3 sents/sec
+ 22500) Train loss: 7.2119    Train acc:  0.00%    Train rate: 2341.6 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3367.8 sents/sec
+ 22600) Train loss: 7.1462    Train acc:  0.00%    Train rate: 2469.5 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2703.9 sents/sec
+ 22700) Train loss: 7.1970    Train acc:  0.00%    Train rate: 2209.7 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2710.7 sents/sec
+ 22800) Train loss: 7.2356    Train acc:  0.00%    Train rate: 2318.6 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2970.0 sents/sec
+ 22900) Train loss: 7.2197    Train acc:  0.00%    Train rate: 2357.2 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3170.2 sents/sec
+ 23000) Train loss: 7.1339    Train acc:  0.00%    Train rate: 2723.0 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3190.3 sents/sec
+ 23100) Train loss: 7.3023    Train acc:  0.00%    Train rate: 2143.8 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3223.1 sents/sec
+ 23200) Train loss: 7.1927    Train acc:  0.00%    Train rate: 2417.6 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2783.9 sents/sec
+ 23300) Train loss: 7.0870    Train acc:  0.00%    Train rate: 2451.5 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2633.0 sents/sec
+ 23400) Train loss: 7.2532    Train acc:  0.00%    Train rate: 2035.1 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2756.4 sents/sec
+ 23500) Train loss: 7.1483    Train acc:  0.00%    Train rate: 2300.6 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3185.6 sents/sec
+ 23600) Train loss: 7.2191    Train acc:  0.00%    Train rate: 2397.9 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3125.0 sents/sec
+ 23700) Train loss: 7.2156    Train acc:  0.00%    Train rate: 2404.6 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3214.8 sents/sec
+ 23800) Train loss: 7.2539    Train acc:  0.00%    Train rate: 2371.3 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3219.3 sents/sec
+ 23900) Train loss: 7.2064    Train acc:  0.00%    Train rate: 2390.5 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3073.1 sents/sec
+ 24000) Train loss: 7.0829    Train acc:  0.00%    Train rate: 2816.5 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2892.2 sents/sec
+ 24100) Train loss: 7.2602    Train acc:  0.00%    Train rate: 2059.5 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2660.5 sents/sec
+ 24200) Train loss: 7.2144    Train acc:  0.00%    Train rate: 2166.8 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2738.9 sents/sec
+ 24300) Train loss: 7.1762    Train acc:  0.00%    Train rate: 2227.7 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2803.4 sents/sec
+ 24400) Train loss: 7.1965    Train acc:  0.00%    Train rate: 2263.0 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3152.9 sents/sec
+ 24500) Train loss: 7.1943    Train acc:  0.00%    Train rate: 2463.9 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3105.9 sents/sec
+ 24600) Train loss: 7.1807    Train acc:  0.00%    Train rate: 2526.1 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3294.1 sents/sec
+ 24700) Train loss: 7.1948    Train acc:  0.00%    Train rate: 2533.6 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3485.6 sents/sec
+ 24800) Train loss: 7.1852    Train acc:  0.00%    Train rate: 2528.3 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3121.8 sents/sec
+ 24900) Train loss: 7.1943    Train acc:  0.00%    Train rate: 2203.6 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2742.1 sents/sec
+ 25000) Train loss: 7.2208    Train acc:  0.00%    Train rate: 2126.6 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2664.2 sents/sec
+ 25100) Train loss: 7.1903    Train acc:  0.00%    Train rate: 2198.2 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2805.3 sents/sec
+ 25200) Train loss: 7.2276    Train acc:  0.00%    Train rate: 2113.7 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2733.9 sents/sec
+ 25300) Train loss: 7.1451    Train acc:  0.00%    Train rate: 2581.0 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3274.6 sents/sec
+ 25400) Train loss: 7.2229    Train acc:  0.00%    Train rate: 2449.8 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3125.2 sents/sec
+ 25500) Train loss: 7.2064    Train acc:  0.00%    Train rate: 2427.7 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3172.0 sents/sec
+ 25600) Train loss: 7.2337    Train acc:  0.00%    Train rate: 2367.7 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3097.6 sents/sec
+ 25700) Train loss: 7.1424    Train acc:  0.00%    Train rate: 2523.1 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3244.6 sents/sec
+ 25800) Train loss: 7.1617    Train acc:  0.00%    Train rate: 2383.8 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2899.1 sents/sec
+ 25900) Train loss: 7.2875    Train acc:  0.00%    Train rate: 2010.1 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2711.0 sents/sec
+ 26000) Train loss: 7.2016    Train acc:  0.00%    Train rate: 2220.0 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2904.0 sents/sec
+ 26100) Train loss: 7.1419    Train acc:  0.00%    Train rate: 2662.1 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3361.9 sents/sec
+ 26200) Train loss: 7.2325    Train acc:  0.00%    Train rate: 2330.0 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3233.7 sents/sec
+ 26300) Train loss: 7.1808    Train acc:  0.00%    Train rate: 2550.7 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3019.9 sents/sec
+ 26400) Train loss: 7.1547    Train acc:  0.00%    Train rate: 2620.0 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3132.6 sents/sec
+ 26500) Train loss: 7.2263    Train acc:  0.00%    Train rate: 2317.2 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2724.9 sents/sec
+ 26600) Train loss: 7.1984    Train acc:  0.00%    Train rate: 2220.8 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2850.2 sents/sec
+ 26700) Train loss: 7.2393    Train acc:  0.00%    Train rate: 2152.1 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3081.8 sents/sec
+ 26800) Train loss: 7.1683    Train acc:  0.00%    Train rate: 2613.6 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3332.1 sents/sec
+ 26900) Train loss: 7.1805    Train acc:  0.00%    Train rate: 2517.8 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3042.7 sents/sec
+ 27000) Train loss: 7.2326    Train acc:  0.00%    Train rate: 2366.5 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2883.6 sents/sec
+ 27100) Train loss: 7.1608    Train acc:  0.00%    Train rate: 2628.9 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3078.1 sents/sec
+ 27200) Train loss: 7.1782    Train acc:  0.00%    Train rate: 2468.0 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2830.7 sents/sec
+ 27300) Train loss: 7.2350    Train acc:  0.00%    Train rate: 2046.1 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2795.9 sents/sec
+ 27400) Train loss: 7.1977    Train acc:  0.00%    Train rate: 2232.8 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2663.7 sents/sec
+ 27500) Train loss: 7.2041    Train acc:  0.00%    Train rate: 2292.8 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3138.4 sents/sec
+ 27600) Train loss: 7.2050    Train acc:  0.00%    Train rate: 2443.0 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3333.7 sents/sec
+ 27700) Train loss: 7.1912    Train acc:  0.00%    Train rate: 2437.3 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3136.7 sents/sec
+ 27800) Train loss: 7.2249    Train acc:  0.00%    Train rate: 2349.7 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3119.6 sents/sec
+ 27900) Train loss: 7.1928    Train acc:  0.00%    Train rate: 2499.8 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3228.9 sents/sec
+ 28000) Train loss: 7.2326    Train acc:  0.00%    Train rate: 2179.6 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2785.6 sents/sec
+ 28100) Train loss: 7.1111    Train acc:  0.00%    Train rate: 2435.6 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2744.3 sents/sec
+ 28200) Train loss: 7.2622    Train acc:  0.00%    Train rate: 1967.4 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2806.6 sents/sec
+ 28300) Train loss: 7.1837    Train acc:  0.00%    Train rate: 2557.9 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2995.8 sents/sec
+ 28400) Train loss: 7.1891    Train acc:  0.00%    Train rate: 2371.2 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3034.1 sents/sec
+ 28500) Train loss: 7.1928    Train acc:  0.00%    Train rate: 2433.0 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3083.9 sents/sec
+ 28600) Train loss: 7.1997    Train acc:  0.00%    Train rate: 2402.6 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3295.0 sents/sec
+ 28700) Train loss: 7.2214    Train acc:  0.00%    Train rate: 2424.5 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3152.7 sents/sec
+ 28800) Train loss: 7.1912    Train acc:  0.00%    Train rate: 2282.3 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2705.1 sents/sec
+ 28900) Train loss: 7.1183    Train acc:  0.00%    Train rate: 2407.2 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2713.0 sents/sec
+ 29000) Train loss: 7.2459    Train acc:  0.00%    Train rate: 2170.0 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3215.1 sents/sec
+ 29100) Train loss: 7.1974    Train acc:  0.00%    Train rate: 2472.8 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3214.9 sents/sec
+ 29200) Train loss: 7.2030    Train acc:  0.00%    Train rate: 2449.1 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3106.2 sents/sec
+ 29300) Train loss: 7.1958    Train acc:  0.00%    Train rate: 2467.5 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3124.6 sents/sec
+ 29400) Train loss: 7.2030    Train acc:  0.00%    Train rate: 2405.7 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3605.5 sents/sec
+ 29500) Train loss: 7.1953    Train acc:  0.00%    Train rate: 2385.2 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2746.6 sents/sec
+ 29600) Train loss: 7.2164    Train acc:  0.00%    Train rate: 2106.5 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2701.8 sents/sec
+ 29700) Train loss: 7.1484    Train acc:  0.00%    Train rate: 2355.1 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2763.8 sents/sec
+ 29800) Train loss: 7.2144    Train acc:  0.00%    Train rate: 2116.7 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2749.2 sents/sec
+ 29900) Train loss: 7.2363    Train acc:  0.00%    Train rate: 2176.8 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3077.4 sents/sec
+ 30000) Train loss: 7.1532    Train acc:  0.00%    Train rate: 2632.2 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3101.4 sents/sec
+ 30100) Train loss: 7.2238    Train acc:  0.00%    Train rate: 2234.8 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3035.4 sents/sec
+ 30200) Train loss: 7.1970    Train acc:  0.00%    Train rate: 2639.2 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3379.2 sents/sec
+ 30300) Train loss: 7.2341    Train acc:  0.00%    Train rate: 2366.4 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2984.6 sents/sec
+ 30400) Train loss: 7.1138    Train acc:  0.00%    Train rate: 2584.1 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2848.1 sents/sec
+ 30500) Train loss: 7.2572    Train acc:  0.00%    Train rate: 2072.1 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2665.7 sents/sec
+ 30600) Train loss: 7.2110    Train acc:  0.00%    Train rate: 2111.7 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2704.1 sents/sec
+ 30700) Train loss: 7.2383    Train acc:  0.00%    Train rate: 1989.4 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2708.4 sents/sec
+ 30800) Train loss: 7.1259    Train acc:  0.00%    Train rate: 2465.2 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2683.1 sents/sec
+ 30900) Train loss: 7.1763    Train acc:  0.00%    Train rate: 2225.9 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2835.8 sents/sec
+ 31000) Train loss: 7.2785    Train acc:  0.00%    Train rate: 2114.7 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3297.3 sents/sec
+ 31100) Train loss: 7.1588    Train acc:  0.00%    Train rate: 2604.0 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3414.9 sents/sec
+ 31200) Train loss: 7.1667    Train acc:  0.00%    Train rate: 2538.5 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3368.4 sents/sec
+ 31300) Train loss: 7.2325    Train acc:  0.00%    Train rate: 2414.6 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3193.6 sents/sec
+ 31400) Train loss: 7.1794    Train acc:  0.00%    Train rate: 2513.4 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3316.4 sents/sec
+ 31500) Train loss: 7.2199    Train acc:  0.00%    Train rate: 2149.8 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2725.6 sents/sec
+ 31600) Train loss: 7.2109    Train acc:  0.00%    Train rate: 2107.3 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2769.3 sents/sec
+ 31700) Train loss: 7.1576    Train acc:  0.00%    Train rate: 2329.2 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3252.7 sents/sec
+ 31800) Train loss: 7.2011    Train acc:  0.00%    Train rate: 2444.3 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3065.1 sents/sec
+ 31900) Train loss: 7.2150    Train acc:  0.00%    Train rate: 2427.3 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3271.6 sents/sec
+ 32000) Train loss: 7.2052    Train acc:  0.00%    Train rate: 2394.4 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3168.8 sents/sec
+ 32100) Train loss: 7.1893    Train acc:  0.00%    Train rate: 2519.4 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3160.3 sents/sec
+ 32200) Train loss: 7.2304    Train acc:  0.00%    Train rate: 2308.2 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2745.8 sents/sec
+ 32300) Train loss: 7.1597    Train acc:  0.00%    Train rate: 2248.0 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2733.9 sents/sec
+ 32400) Train loss: 7.2581    Train acc:  0.00%    Train rate: 2059.7 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3098.7 sents/sec
+ 32500) Train loss: 7.1682    Train acc:  0.00%    Train rate: 2525.5 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3357.3 sents/sec
+ 32600) Train loss: 7.2181    Train acc:  0.00%    Train rate: 2551.2 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3529.3 sents/sec
+ 32700) Train loss: 7.1558    Train acc:  0.00%    Train rate: 2662.0 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3151.7 sents/sec
+ 32800) Train loss: 7.2109    Train acc:  0.00%    Train rate: 2437.9 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2984.7 sents/sec
+ 32900) Train loss: 7.1592    Train acc:  0.00%    Train rate: 2369.5 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2675.1 sents/sec
+ 33000) Train loss: 7.2749    Train acc:  0.00%    Train rate: 1983.3 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2751.3 sents/sec
+ 33100) Train loss: 7.1408    Train acc:  0.00%    Train rate: 2354.5 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2681.5 sents/sec
+ 33200) Train loss: 7.2722    Train acc:  0.00%    Train rate: 1922.0 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2669.1 sents/sec
+ 33300) Train loss: 7.1493    Train acc:  0.00%    Train rate: 2442.0 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3234.6 sents/sec
+ 33400) Train loss: 7.1927    Train acc:  0.00%    Train rate: 2450.2 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3132.6 sents/sec
+ 33500) Train loss: 7.1734    Train acc:  0.00%    Train rate: 2617.1 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3260.9 sents/sec
+ 33600) Train loss: 7.1818    Train acc:  0.00%    Train rate: 2416.1 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3195.6 sents/sec
+ 33700) Train loss: 7.2005    Train acc:  0.00%    Train rate: 2497.7 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3257.5 sents/sec
+ 33800) Train loss: 7.2365    Train acc:  0.00%    Train rate: 2239.0 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2684.3 sents/sec
+ 33900) Train loss: 7.1724    Train acc:  0.00%    Train rate: 2293.5 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2694.2 sents/sec
+ 34000) Train loss: 7.1844    Train acc:  0.00%    Train rate: 2237.8 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3119.6 sents/sec
+ 34100) Train loss: 7.2019    Train acc:  0.00%    Train rate: 2508.9 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3225.0 sents/sec
+ 34200) Train loss: 7.2340    Train acc:  0.00%    Train rate: 2338.9 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3365.5 sents/sec
+ 34300) Train loss: 7.1785    Train acc:  0.00%    Train rate: 2536.8 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3254.6 sents/sec
+ 34400) Train loss: 7.2027    Train acc:  0.00%    Train rate: 2472.1 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3143.8 sents/sec
+ 34500) Train loss: 7.1879    Train acc:  0.00%    Train rate: 2480.6 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2708.2 sents/sec
+ 34600) Train loss: 7.2064    Train acc:  0.00%    Train rate: 2113.7 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2675.1 sents/sec
+ 34700) Train loss: 7.1626    Train acc:  0.00%    Train rate: 2306.2 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2691.6 sents/sec
+ 34800) Train loss: 7.2596    Train acc:  0.00%    Train rate: 2000.0 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3216.6 sents/sec
+ 34900) Train loss: 7.1914    Train acc:  0.00%    Train rate: 2482.7 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3284.1 sents/sec
+ 35000) Train loss: 7.1779    Train acc:  0.00%    Train rate: 2530.6 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3438.3 sents/sec
+ 35100) Train loss: 7.2042    Train acc:  0.00%    Train rate: 2514.0 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3644.3 sents/sec
+ 35200) Train loss: 7.1497    Train acc:  0.00%    Train rate: 2660.5 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3178.3 sents/sec
+ 35300) Train loss: 7.1892    Train acc:  0.00%    Train rate: 2450.5 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3069.5 sents/sec
+ 35400) Train loss: 7.2513    Train acc:  0.00%    Train rate: 2062.7 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2730.0 sents/sec
+ 35500) Train loss: 7.1975    Train acc:  0.00%    Train rate: 2101.8 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2686.4 sents/sec
+ 35600) Train loss: 7.1614    Train acc:  0.00%    Train rate: 2304.8 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2647.4 sents/sec
+ 35700) Train loss: 7.2217    Train acc:  0.00%    Train rate: 2265.4 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2940.4 sents/sec
+ 35800) Train loss: 7.1699    Train acc:  0.00%    Train rate: 2531.8 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3223.5 sents/sec
+ 35900) Train loss: 7.1926    Train acc:  0.00%    Train rate: 2459.6 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3029.9 sents/sec
+ 36000) Train loss: 7.2406    Train acc:  0.00%    Train rate: 2373.1 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3065.8 sents/sec
+ 36100) Train loss: 7.1498    Train acc:  0.00%    Train rate: 2582.3 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2963.9 sents/sec
+ 36200) Train loss: 7.2810    Train acc:  0.00%    Train rate: 2103.4 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2831.9 sents/sec
+ 36300) Train loss: 7.1366    Train acc:  0.00%    Train rate: 2358.8 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2770.1 sents/sec
+ 36400) Train loss: 7.2272    Train acc:  0.00%    Train rate: 2081.2 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2674.9 sents/sec
+ 36500) Train loss: 7.1507    Train acc:  0.00%    Train rate: 2483.2 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3100.7 sents/sec
+ 36600) Train loss: 7.2359    Train acc:  0.00%    Train rate: 2313.1 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2988.0 sents/sec
+ 36700) Train loss: 7.1964    Train acc:  0.00%    Train rate: 2504.4 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2855.0 sents/sec
+ 36800) Train loss: 7.2061    Train acc:  0.00%    Train rate: 2464.1 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2711.6 sents/sec
+ 36900) Train loss: 7.1852    Train acc:  0.00%    Train rate: 2522.4 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3282.1 sents/sec
+ 37000) Train loss: 7.2128    Train acc:  0.00%    Train rate: 2353.2 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2719.4 sents/sec
+ 37100) Train loss: 7.1484    Train acc:  0.00%    Train rate: 2378.3 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2819.1 sents/sec
+ 37200) Train loss: 7.2832    Train acc:  0.00%    Train rate: 1989.3 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2883.1 sents/sec
+ 37300) Train loss: 7.1813    Train acc:  0.00%    Train rate: 2354.4 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3362.8 sents/sec
+ 37400) Train loss: 7.1735    Train acc:  0.00%    Train rate: 2565.1 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3200.4 sents/sec
+ 37500) Train loss: 7.2413    Train acc:  0.00%    Train rate: 2331.2 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3161.0 sents/sec
+ 37600) Train loss: 7.1590    Train acc:  0.00%    Train rate: 2578.9 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3200.3 sents/sec
+ 37700) Train loss: 7.1857    Train acc:  0.00%    Train rate: 2420.3 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3605.5 sents/sec
+ 37800) Train loss: 7.2234    Train acc:  0.00%    Train rate: 2289.7 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2741.5 sents/sec
+ 37900) Train loss: 7.1467    Train acc:  0.00%    Train rate: 2368.7 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2701.6 sents/sec
+ 38000) Train loss: 7.1765    Train acc:  0.00%    Train rate: 2319.4 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2912.2 sents/sec
+ 38100) Train loss: 7.3114    Train acc:  0.00%    Train rate: 2094.3 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3237.3 sents/sec
+ 38200) Train loss: 7.1818    Train acc:  0.00%    Train rate: 2553.1 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3072.2 sents/sec
+ 38300) Train loss: 7.1172    Train acc:  0.00%    Train rate: 2731.8 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3217.2 sents/sec
+ 38400) Train loss: 7.2107    Train acc:  0.00%    Train rate: 2391.0 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3421.2 sents/sec
+ 38500) Train loss: 7.1677    Train acc:  0.00%    Train rate: 2529.1 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2689.3 sents/sec
+ 38600) Train loss: 7.2517    Train acc:  0.00%    Train rate: 2017.2 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2677.7 sents/sec
+ 38700) Train loss: 7.2277    Train acc:  0.00%    Train rate: 2117.6 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2746.6 sents/sec
+ 38800) Train loss: 7.1574    Train acc:  0.00%    Train rate: 2558.9 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3090.4 sents/sec
+ 38900) Train loss: 7.2099    Train acc:  0.00%    Train rate: 2429.8 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3217.0 sents/sec
+ 39000) Train loss: 7.2030    Train acc:  0.00%    Train rate: 2474.3 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3158.1 sents/sec
+ 39100) Train loss: 7.1989    Train acc:  0.00%    Train rate: 2565.9 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3371.3 sents/sec
+ 39200) Train loss: 7.2006    Train acc:  0.00%    Train rate: 2404.7 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3034.9 sents/sec
+ 39300) Train loss: 7.2040    Train acc:  0.00%    Train rate: 2179.5 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2878.4 sents/sec
+ 39400) Train loss: 7.2103    Train acc:  0.00%    Train rate: 2182.2 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2972.9 sents/sec
+ 39500) Train loss: 7.1510    Train acc:  0.00%    Train rate: 2626.6 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3046.4 sents/sec
+ 39600) Train loss: 7.2613    Train acc:  0.00%    Train rate: 2206.7 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3118.7 sents/sec
+ 39700) Train loss: 7.1729    Train acc:  0.00%    Train rate: 2617.0 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3047.6 sents/sec
+ 39800) Train loss: 7.2032    Train acc:  0.00%    Train rate: 2313.3 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3027.9 sents/sec
+ 39900) Train loss: 7.1654    Train acc:  0.00%    Train rate: 2672.2 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3011.9 sents/sec
+ 40000) Train loss: 7.1314    Train acc:  0.00%    Train rate: 2404.3 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2710.9 sents/sec
+ 40100) Train loss: 7.3117    Train acc:  0.00%    Train rate: 1832.8 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2687.5 sents/sec
+ 40200) Train loss: 7.2193    Train acc:  0.00%    Train rate: 2172.3 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2569.9 sents/sec
+ 40300) Train loss: 7.1241    Train acc:  0.00%    Train rate: 2647.0 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3121.2 sents/sec
+ 40400) Train loss: 7.2360    Train acc:  0.00%    Train rate: 2337.6 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3671.3 sents/sec
+ 40500) Train loss: 7.2494    Train acc:  0.00%    Train rate: 2267.4 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3304.9 sents/sec
+ 40600) Train loss: 7.1485    Train acc:  0.00%    Train rate: 2804.7 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3243.1 sents/sec
+ 40700) Train loss: 7.1626    Train acc:  0.00%    Train rate: 2490.2 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3082.6 sents/sec
+ 40800) Train loss: 7.1895    Train acc:  0.00%    Train rate: 2254.6 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2693.1 sents/sec
+ 40900) Train loss: 7.2402    Train acc:  0.00%    Train rate: 2093.7 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2691.4 sents/sec
+ 41000) Train loss: 7.1896    Train acc:  0.00%    Train rate: 2180.2 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2905.4 sents/sec
+ 41100) Train loss: 7.1607    Train acc:  0.00%    Train rate: 2597.9 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3274.6 sents/sec
+ 41200) Train loss: 7.2412    Train acc:  0.00%    Train rate: 2292.1 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3215.8 sents/sec
+ 41300) Train loss: 7.1579    Train acc:  0.00%    Train rate: 2637.2 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3287.1 sents/sec
+ 41400) Train loss: 7.2580    Train acc:  0.00%    Train rate: 2247.7 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3133.8 sents/sec
+ 41500) Train loss: 7.1965    Train acc:  0.00%    Train rate: 2503.3 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2902.8 sents/sec
+ 41600) Train loss: 7.1865    Train acc:  0.00%    Train rate: 2231.2 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2697.9 sents/sec
+ 41700) Train loss: 7.2014    Train acc:  0.00%    Train rate: 2282.3 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3177.7 sents/sec
+ 41800) Train loss: 7.1881    Train acc:  0.00%    Train rate: 2468.9 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2796.6 sents/sec
+ 41900) Train loss: 7.2206    Train acc:  0.00%    Train rate: 2426.7 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3287.7 sents/sec
+ 42000) Train loss: 7.1972    Train acc:  0.00%    Train rate: 2508.1 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3168.4 sents/sec
+ 42100) Train loss: 7.2280    Train acc:  0.00%    Train rate: 2302.8 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2976.5 sents/sec
+ 42200) Train loss: 7.1558    Train acc:  0.00%    Train rate: 2438.1 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2911.5 sents/sec
+ 42300) Train loss: 7.2121    Train acc:  0.00%    Train rate: 2165.3 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2850.3 sents/sec
+ 42400) Train loss: 7.1832    Train acc:  0.00%    Train rate: 2196.0 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3095.9 sents/sec
+ 42500) Train loss: 7.2392    Train acc:  0.00%    Train rate: 2317.6 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3076.6 sents/sec
+ 42600) Train loss: 7.1310    Train acc:  0.00%    Train rate: 2734.9 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3152.0 sents/sec
+ 42700) Train loss: 7.2722    Train acc:  0.00%    Train rate: 2230.2 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3133.2 sents/sec
+ 42800) Train loss: 7.1850    Train acc:  0.00%    Train rate: 2536.0 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2889.1 sents/sec
+ 42900) Train loss: 7.1990    Train acc:  0.00%    Train rate: 2320.5 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2820.7 sents/sec
+ 43000) Train loss: 7.1577    Train acc:  0.00%    Train rate: 2252.4 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2675.0 sents/sec
+ 43100) Train loss: 7.2707    Train acc:  0.00%    Train rate: 1999.4 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2623.3 sents/sec
+ 43200) Train loss: 7.1501    Train acc:  0.00%    Train rate: 2522.0 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3035.6 sents/sec
+ 43300) Train loss: 7.1653    Train acc:  0.00%    Train rate: 2632.7 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3150.3 sents/sec
+ 43400) Train loss: 7.2193    Train acc:  0.00%    Train rate: 2386.8 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3134.0 sents/sec
+ 43500) Train loss: 7.1540    Train acc:  0.00%    Train rate: 2661.1 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3360.7 sents/sec
+ 43600) Train loss: 7.2282    Train acc:  0.00%    Train rate: 2350.9 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3326.5 sents/sec
+ 43700) Train loss: 7.1828    Train acc:  0.00%    Train rate: 2242.8 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2607.5 sents/sec
+ 43800) Train loss: 7.2212    Train acc:  0.00%    Train rate: 2128.2 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2678.9 sents/sec
+ 43900) Train loss: 7.2250    Train acc:  0.00%    Train rate: 2204.7 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3126.8 sents/sec
+ 44000) Train loss: 7.1889    Train acc:  0.00%    Train rate: 2502.3 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3438.3 sents/sec
+ 44100) Train loss: 7.2076    Train acc:  0.00%    Train rate: 2429.9 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3326.4 sents/sec
+ 44200) Train loss: 7.1784    Train acc:  0.00%    Train rate: 2518.2 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3183.2 sents/sec
+ 44300) Train loss: 7.2148    Train acc:  0.00%    Train rate: 2363.5 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3098.5 sents/sec
+ 44400) Train loss: 7.1608    Train acc:  0.00%    Train rate: 2390.3 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2729.3 sents/sec
+ 44500) Train loss: 7.2469    Train acc:  0.00%    Train rate: 2007.8 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2867.2 sents/sec
+ 44600) Train loss: 7.2207    Train acc:  0.00%    Train rate: 2188.2 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3118.9 sents/sec
+ 44700) Train loss: 7.1577    Train acc:  0.00%    Train rate: 2566.7 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3214.9 sents/sec
+ 44800) Train loss: 7.2217    Train acc:  0.00%    Train rate: 2433.8 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3234.9 sents/sec
+ 44900) Train loss: 7.1984    Train acc:  0.00%    Train rate: 2521.3 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3081.6 sents/sec
+ 45000) Train loss: 7.2509    Train acc:  0.00%    Train rate: 2283.3 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3238.7 sents/sec
+ 45100) Train loss: 7.1643    Train acc:  0.00%    Train rate: 2531.4 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2732.3 sents/sec
+ 45200) Train loss: 7.2146    Train acc:  0.00%    Train rate: 2108.1 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2710.6 sents/sec
+ 45300) Train loss: 7.1878    Train acc:  0.00%    Train rate: 2197.4 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2642.0 sents/sec
+ 45400) Train loss: 7.1501    Train acc:  0.00%    Train rate: 2358.3 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2799.6 sents/sec
+ 45500) Train loss: 7.2149    Train acc:  0.00%    Train rate: 2289.3 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3257.1 sents/sec
+ 45600) Train loss: 7.1373    Train acc:  0.00%    Train rate: 2724.0 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3008.0 sents/sec
+ 45700) Train loss: 7.3190    Train acc:  0.00%    Train rate: 2099.1 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3162.4 sents/sec
+ 45800) Train loss: 7.1092    Train acc:  0.00%    Train rate: 2756.3 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3220.9 sents/sec
+ 45900) Train loss: 7.1940    Train acc:  0.00%    Train rate: 2474.1 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3305.8 sents/sec
+ 46000) Train loss: 7.1831    Train acc:  0.00%    Train rate: 2253.9 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2710.1 sents/sec
+ 46100) Train loss: 7.2782    Train acc:  0.00%    Train rate: 2033.3 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3199.6 sents/sec
+ 46200) Train loss: 7.1495    Train acc:  0.00%    Train rate: 2509.2 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2770.9 sents/sec
+ 46300) Train loss: 7.2365    Train acc:  0.00%    Train rate: 2053.5 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2703.8 sents/sec
+ 46400) Train loss: 7.1777    Train acc:  0.00%    Train rate: 2396.1 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3103.1 sents/sec
+ 46500) Train loss: 7.2117    Train acc:  0.00%    Train rate: 2418.0 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3214.9 sents/sec
+ 46600) Train loss: 7.1829    Train acc:  0.00%    Train rate: 2484.3 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3151.9 sents/sec
+ 46700) Train loss: 7.1768    Train acc:  0.00%    Train rate: 2469.1 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3299.3 sents/sec
+ 46800) Train loss: 7.2056    Train acc:  0.00%    Train rate: 2409.6 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3113.4 sents/sec
+ 46900) Train loss: 7.1823    Train acc:  0.00%    Train rate: 2498.0 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3349.7 sents/sec
+ 47000) Train loss: 7.2778    Train acc:  0.00%    Train rate: 2184.5 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3071.7 sents/sec
+ 47100) Train loss: 7.1809    Train acc:  0.00%    Train rate: 2589.2 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3081.1 sents/sec
+ 47200) Train loss: 7.1760    Train acc:  0.00%    Train rate: 2520.1 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3260.2 sents/sec
+ 47300) Train loss: 7.1749    Train acc:  0.00%    Train rate: 2538.3 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3115.3 sents/sec
+ 47400) Train loss: 7.2475    Train acc:  0.00%    Train rate: 2232.0 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3096.3 sents/sec
+ 47500) Train loss: 7.1345    Train acc:  0.00%    Train rate: 2747.0 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3313.9 sents/sec
+ 47600) Train loss: 7.2988    Train acc:  0.00%    Train rate: 2020.2 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2717.8 sents/sec
+ 47700) Train loss: 7.1897    Train acc:  0.00%    Train rate: 2200.3 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2686.4 sents/sec
+ 47800) Train loss: 7.1319    Train acc:  0.00%    Train rate: 2407.5 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2836.7 sents/sec
+ 47900) Train loss: 7.1666    Train acc:  0.00%    Train rate: 2470.4 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3416.2 sents/sec
+ 48000) Train loss: 7.1942    Train acc:  0.00%    Train rate: 2480.5 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3120.1 sents/sec
+ 48100) Train loss: 7.2175    Train acc:  0.00%    Train rate: 2339.2 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3380.5 sents/sec
+ 48200) Train loss: 7.1654    Train acc:  0.00%    Train rate: 2686.2 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3059.1 sents/sec
+ 48300) Train loss: 7.2067    Train acc:  0.00%    Train rate: 2499.0 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3114.8 sents/sec
+ 48400) Train loss: 7.1696    Train acc:  0.00%    Train rate: 2359.7 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2916.0 sents/sec
+ 48500) Train loss: 7.1992    Train acc:  0.00%    Train rate: 2140.3 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2617.4 sents/sec
+ 48600) Train loss: 7.2845    Train acc:  0.00%    Train rate: 1987.0 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2684.8 sents/sec
+ 48700) Train loss: 7.1547    Train acc:  0.00%    Train rate: 2234.7 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2791.3 sents/sec
+ 48800) Train loss: 7.1948    Train acc:  0.00%    Train rate: 2228.5 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3019.3 sents/sec
+ 48900) Train loss: 7.1982    Train acc:  0.00%    Train rate: 2476.8 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3554.3 sents/sec
+ 49000) Train loss: 7.2112    Train acc:  0.00%    Train rate: 2541.0 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3220.2 sents/sec
+ 49100) Train loss: 7.2086    Train acc:  0.00%    Train rate: 2454.2 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3108.7 sents/sec
+ 49200) Train loss: 7.2003    Train acc:  0.00%    Train rate: 2476.8 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3071.9 sents/sec
+ 49300) Train loss: 7.1690    Train acc:  0.00%    Train rate: 2545.4 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3333.8 sents/sec
+ 49400) Train loss: 7.2586    Train acc:  0.00%    Train rate: 2113.0 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2765.4 sents/sec
+ 49500) Train loss: 7.2173    Train acc:  0.00%    Train rate: 2133.7 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2705.6 sents/sec
+ 49600) Train loss: 7.1505    Train acc:  0.00%    Train rate: 2324.8 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 2731.0 sents/sec
+ 49700) Train loss: 7.1440    Train acc:  0.00%    Train rate: 2295.7 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3108.6 sents/sec
+ 49800) Train loss: 7.2628    Train acc:  0.00%    Train rate: 2295.2 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3078.9 sents/sec
+ 49900) Train loss: 7.1829    Train acc:  0.00%    Train rate: 2451.7 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3160.1 sents/sec
+ 50000) Train loss: 7.2318    Train acc:  0.00%    Train rate: 2363.3 sents/sec
+	Valid loss: 6.4807    Valid acc:  0.00%    Valid rate: 3051.4 sents/sec
