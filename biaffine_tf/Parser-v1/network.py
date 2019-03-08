@@ -75,7 +75,7 @@ class Network(Configurable):
     self._testset = Dataset(self.test_file, self._vocabs, model, self._config, name='Testset')
     
     self._ops = self._gen_ops()
-    self._save_vars = filter(lambda x: u'Pretrained' not in x.name, tf.all_variables())
+    self._save_vars = filter(lambda x: u'Pretrained' not in x.name, tf.global_variables())
     self.history = {
       'train_loss': [],
       'train_accuracy': [],
