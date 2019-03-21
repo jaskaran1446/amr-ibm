@@ -8,6 +8,7 @@ AMRInputPreprocessor for extract features based on stanford corenlp
 @author: Chunchuan Lyu (chunchuan.lv@gmail.com)
 @since: 2018-05-30
 '''
+import torch
 from torch.autograd import Variable
 from utility.StringCopyRules import  *
 from utility.ReCategorization import  *
@@ -15,7 +16,7 @@ from parser.Dict import seq_to_id
 from utility.constants import core_nlp_url
 import networkx as nx
 
-from src import *
+# from src import *
 from parser.modules.helper_module import myunpack
 from torch.nn.utils.rnn import pad_packed_sequence as unpack
 from torch.nn.utils.rnn import PackedSequence
