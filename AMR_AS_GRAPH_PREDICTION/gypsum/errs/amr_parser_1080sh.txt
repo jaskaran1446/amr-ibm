@@ -1,0 +1,1 @@
+slurmstepd: error: *** JOB 4840807 ON node119 CANCELLED AT 2019-03-21T17:59:19 DUE TO TIME LIMIT ***

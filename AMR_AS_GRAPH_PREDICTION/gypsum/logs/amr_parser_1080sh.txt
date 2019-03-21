@@ -1,0 +1,759 @@
+Namespace(alpha=0.1, amr_enlayers=1, amr_rnn_size=200, batch_size=64, brnn=True, cat_bias=1, cat_dim=32, cuda=1, dim=200, dropout=0.2, emb_independent=1, epochs=30, folder='/home/amukherjee/amr-ibm/AMR_AS_GRAPH_PREDICTION/Data/amr_annotation_r2/data/alignments/split', from_gpus=[0], get_sense=True, get_wiki=True, gpus=[0], high_dim=200, independent_posterior=1, initialize_word=1, jamr=0, learning_rate=0.001, learning_rate_decay=0.98, lemma_bias=0, lemma_dim=200, log_per_epoch=10, max_grad_norm=10, ner_dim=16, optim='adam', pos_dim=32, prior_t=5, rel=1.0, rel_dim=200, rel_enlayers=2, rel_rnn_size=512, renyi_alpha=0.5, root_enlayers=1, save_to='/home/amukherjee/amr-ibm/AMR_AS_GRAPH_PREDICTION/model/', sink=10, sink_re=10, sink_t=1, start_decay_at=5, start_epoch=1, suffix='.txt_pre_processed', train_all=False, train_from=None, train_posterior=1, txt_enlayers=1, txt_rnn_size=512, weight_decay=1e-05, word_dim=300)
+Building model...
+reading /home/amukherjee/amr-ibm/AMR_AS_GRAPH_PREDICTION/Data/amr_annotation_r2/data/alignments/split/dev/combined.pickle_without_jamr_processed
+done reading /home/amukherjee/amr-ibm/AMR_AS_GRAPH_PREDICTION/Data/amr_annotation_r2/data/alignments/split/dev/combined.pickle_without_jamr_processed, 1368 sentences processed
+reading /home/amukherjee/amr-ibm/AMR_AS_GRAPH_PREDICTION/Data/amr_annotation_r2/data/alignments/split/training/combined.pickle_without_jamr_processed
+done reading /home/amukherjee/amr-ibm/AMR_AS_GRAPH_PREDICTION/Data/amr_annotation_r2/data/alignments/split/training/combined.pickle_without_jamr_processed, 36521 sentences processed
+loading fixed word embedding
+word_initialized 32297
+lemma initialized 0
+word_total 35365
+AmrModel (
+  (concept_decoder): ConceptIdentifier (
+    (encoder): SentenceEncoder (
+      (rnn): LSTM(548, 256, dropout=0.2, bidirectional=True)
+      (lemma_lut): Embedding(29364, 200, padding_idx=0)
+      (word_fix_lut): Embedding(35365, 300, padding_idx=0)
+      (pos_lut): Embedding(48, 32, padding_idx=0)
+      (ner_lut): Embedding(27, 16, padding_idx=0)
+      (drop_emb): Dropout (p = 0.2)
+    )
+    (generator): Concept_Classifier (
+      (cat_score): Sequential (
+        (0): Dropout (p = 0.2)
+        (1): Linear (512 -> 32)
+      )
+      (le_score): Sequential (
+        (0): Dropout (p = 0.2)
+        (1): Linear (512 -> 490)
+      )
+      (ner_score): Sequential (
+        (0): Dropout (p = 0.2)
+        (1): Linear (512 -> 109)
+      )
+      (sm): Softmax ()
+    )
+  )
+  (poserior_m): VariationalAlignmentModel (
+    (posterior): Posterior (
+      (transform): Sequential (
+        (0): Dropout (p = 0.2)
+        (1): Linear (512 -> 200)
+      )
+      (sm): Softmax ()
+    )
+    (amr_encoder): AmrEncoder (
+      (rnn): LSTM(232, 100, dropout=0.2, bidirectional=True)
+      (cat_lut): Embedding(32, 32, padding_idx=0)
+      (lemma_lut): Embedding(29364, 200, padding_idx=0)
+    )
+    (snt_encoder): SentenceEncoder (
+      (rnn): LSTM(548, 256, dropout=0.2, bidirectional=True)
+      (lemma_lut): Embedding(29364, 200, padding_idx=0)
+      (word_fix_lut): Embedding(35365, 300, padding_idx=0)
+      (pos_lut): Embedding(48, 32, padding_idx=0)
+      (ner_lut): Embedding(27, 16, padding_idx=0)
+      (drop_emb): Dropout (p = 0.2)
+    )
+  )
+  (relModel): RelModel (
+    (root_encoder): RootEncoder (
+      (cat_lut): Embedding(32, 32, padding_idx=0)
+      (lemma_lut): Embedding(29364, 200, padding_idx=0)
+      (root): Sequential (
+        (0): Dropout (p = 0.2)
+        (1): Linear (744 -> 200)
+        (2): ReLU ()
+      )
+    )
+    (encoder): RelEncoder (
+      (head): Sequential (
+        (0): Dropout (p = 0.2)
+        (1): Linear (744 -> 200)
+      )
+      (dep): Sequential (
+        (0): Dropout (p = 0.2)
+        (1): Linear (744 -> 200)
+      )
+      (cat_lut): Embedding(32, 32, padding_idx=0)
+      (lemma_lut): Embedding(29364, 200, padding_idx=0)
+    )
+    (generator): RelCalssifierBiLinear (
+      (cat_lut): Embedding(32, 32, padding_idx=0)
+      (bilinear): Sequential (
+        (0): Dropout (p = 0.2)
+        (1): Linear (200 -> 18400)
+      )
+      (head_bias): Sequential (
+        (0): Dropout (p = 0.2)
+        (1): Linear (200 -> 92)
+      )
+      (dep_bias): Sequential (
+        (0): Dropout (p = 0.2)
+        (1): Linear (200 -> 92)
+      )
+      (lemma_lut): Embedding(29364, 200, padding_idx=0)
+    )
+    (root): Linear (200 -> 1)
+    (LogSoftmax): LogSoftmax ()
+  )
+  (rel_encoder): RelSentenceEncoder (
+    (rnn): LSTM(549, 256, num_layers=2, batch_first=True, dropout=0.2, bidirectional=True)
+    (lemma_lut): Embedding(29364, 200, padding_idx=0)
+    (word_fix_lut): Embedding(35365, 300, padding_idx=0)
+    (pos_lut): Embedding(48, 32, padding_idx=0)
+    (ner_lut): Embedding(27, 16, padding_idx=0)
+  )
+  (root_encoder): RootSentenceEncoder (
+    (rnn): LSTM(548, 256, batch_first=True, dropout=0.2, bidirectional=True)
+    (lemma_lut): Embedding(29364, 200, padding_idx=0)
+    (word_fix_lut): Embedding(35365, 300, padding_idx=0)
+    (pos_lut): Embedding(48, 32, padding_idx=0)
+    (ner_lut): Embedding(27, 16, padding_idx=0)
+  )
+)
+ * number of training sentences. 36521
+ * batch  size.. 64
+* number of parameters: 41293102
+
+Epoch 1 57//571
+concept loss 869.9484644684809
+grad_norm 5.547750035345388
+rel perplexity 1.5622595945221418
+root  perplexity 4.8196606935158774
+tokens/s 440.0579836016252
+152.084308385849 s elapsed
+Epoch 1 114//571
+concept loss 1.1011904061221485
+grad_norm 6.559708250287742
+rel perplexity 1.2563896318865007
+root  perplexity 4.3642619360515145
+tokens/s 484.23641345865826
+287.1712267398834 s elapsed
+Epoch 1 171//571
+concept loss 0.7348729671533473
+grad_norm 4.338253904749939
+rel perplexity 1.2160623138371232
+root  perplexity 4.099558326070502
+tokens/s 480.1902517503021
+424.6063449382782 s elapsed
+Epoch 1 228//571
+concept loss 0.563114439556693
+grad_norm 5.31165532639622
+rel perplexity 1.2057009195635662
+root  perplexity 3.966881545719034
+tokens/s 515.840365610235
+552.3784444332123 s elapsed
+Epoch 1 285//571
+concept loss 0.5297891037525644
+grad_norm 2.9046565821427173
+rel perplexity 1.1823102980243259
+root  perplexity 3.8538034061676316
+tokens/s 482.0569268824114
+685.7921559810638 s elapsed
+Epoch 1 342//571
+concept loss 0.4393837951431665
+grad_norm 2.721812477666559
+rel perplexity 1.166551732064147
+root  perplexity 3.783651971850325
+tokens/s 462.859106765349
+827.1850821971893 s elapsed
+Epoch 1 399//571
+concept loss 0.4028152043269231
+grad_norm 2.628043546456926
+rel perplexity 1.1570375254147462
+root  perplexity 3.7386091918817486
+tokens/s 457.3002528584285
+969.3236529827118 s elapsed
+Epoch 1 456//571
+concept loss 0.3690199797396793
+grad_norm 3.296154731758485
+rel perplexity 1.1520057439327822
+root  perplexity 3.6893394283147
+tokens/s 490.97938124258826
+1101.679524421692 s elapsed
+Epoch 1 513//571
+concept loss 0.330746697603481
+grad_norm 3.412940581122848
+rel perplexity 1.149114074872624
+root  perplexity 3.6578707779396407
+tokens/s 483.4225428067479
+1238.698380947113 s elapsed
+Epoch 1 570//571
+concept loss 3.7001946523155347
+grad_norm 3.123445441399402
+rel perplexity 1.143664477789349
+root  perplexity 3.637990827991821
+tokens/s 466.3935330240376
+1378.9190304279327 s elapsed
+Training loss: 89.1826
+Posterior_ppl loss:  88.4994802400458
+Root Training perplexity: 3.63799
+Role Training perplexity: 1.21574
+
+
+source [['Business', ';', 'technology'], ['business', ';', 'technology'], ['NN', ':', 'NN'], ['O', 'O', 'O']]
+
+pre seq [Concept(business), Concept(and), Concept(technology)]
+
+pre srlseq [Concept(business), Concept(and), Concept(technology)]
+
+re-ca gold [['Concept', 'and', '', '', 1, [1]], ['Concept', 'business', '', '', 1, [0]], ['Concept', 'technology', '', '', 1, [2]]]
+
+pre triples [[Concept(and), Concept(business), ':op1', Var(a1)], [Concept(and), Concept(technology), ':op2', Var(a1)], [<s>(<s>), Concept(and), ':top', '<s>']]
+
+gold seq [Concept(and), Concept(business), Concept(technology)]
+gold triples [[Concept(and), Concept(business), ':op1'], [Concept(and), Concept(technology), ':op2'], [<s>(<s>), Concept(and), ':top']]
+
+
+
+Non_Sense
+T,P,TP: 23797 23760 19709
+Precesion,Recall,F1: 0.829503367003367 0.8282136403748371 0.8288580019765756
+
+Full Concept
+T,P,TP: 23797 23760 19258
+Precesion,Recall,F1: 0.8105218855218855 0.8092616716392823 0.8098912883487184
+
+Nonsense REL Triple
+T,P,TP: 25362 24391 13067
+Precesion,Recall,F1: 0.5357303923578369 0.5152196199037931 0.5252748577975198
+
+REL Triple
+T,P,TP: 25362 24391 12561
+Precesion,Recall,F1: 0.5149850354639006 0.49526851194700733 0.5049343758165337
+
+Root
+T,P,TP: 1368 1368 685
+Precesion,Recall,F1: 0.5007309941520468 0.5007309941520468 0.5007309941520468
+
+Unlabeled Rel Triple
+T,P,TP: 25362 24391 13806
+Precesion,Recall,F1: 0.5660284531179534 0.5443577004968062 0.5549816091491969
+
+REL Triple given concept
+T,P,TP: 18377 19060 12561
+Precesion,Recall,F1: 0.6590241343126968 0.6835174402786092 0.6710473595640677
+
+SRL Triple
+T,P,TP: 10435 9883 4306
+Precesion,Recall,F1: 0.43569766265304055 0.4126497364638237 0.42386061620238213
+
+Unlabled SRL Triple
+T,P,TP: 10435 9883 4861
+Precesion,Recall,F1: 0.4918546999898816 0.46583612841399136 0.4784919775568461
+
+SRL Triple given concept
+T,P,TP: 6936 7113 4306
+Precesion,Recall,F1: 0.605370448474624 0.6208189158016147 0.6129973663605951
+
+Unlabeled SRL Triple given concept
+T,P,TP: 6936 7113 4861
+Precesion,Recall,F1: 0.683396597778715 0.700836216839677 0.6920065485087906
+saving best /home/amukherjee/amr-ibm/AMR_AS_GRAPH_PREDICTION/model/gpus_0valid_best.pt
+Validation F1: 0.653972
+Best Validation F1: 0.653972
+Epoch:  1
+
+Epoch 2 57//571
+concept loss 0.26883020184515766
+grad_norm 2.785055618627353
+rel perplexity 1.1352062915689944
+root  perplexity 3.248066100392739
+tokens/s 449.39078714006405
+1733.8666093349457 s elapsed
+Epoch 2 114//571
+concept loss 0.2577859168709175
+grad_norm 3.241575336753274
+rel perplexity 1.1356455048013778
+root  perplexity 3.2920717073472994
+tokens/s 494.35967409388974
+1864.9958410263062 s elapsed
+Epoch 2 171//571
+concept loss 0.255937334584916
+grad_norm 3.1834635095735124
+rel perplexity 1.1331237970800183
+root  perplexity 3.3125170799457124
+tokens/s 484.70387329448215
+2001.1800305843353 s elapsed
+Epoch 2 228//571
+concept loss 0.22740805517886648
+grad_norm 2.938075978861885
+rel perplexity 1.1303401307390777
+root  perplexity 3.3092181637870435
+tokens/s 465.96020727083334
+2142.1362812519073 s elapsed
+Epoch 2 285//571
+concept loss 0.22546598031678977
+grad_norm 2.903572975455143
+rel perplexity 1.1265364873129229
+root  perplexity 3.2983235760971366
+tokens/s 483.90560946568235
+2277.077903032303 s elapsed
+Epoch 2 342//571
+concept loss 0.19733811630899498
+grad_norm 2.477253152372791
+rel perplexity 1.1252906924757233
+root  perplexity 3.291428404007569
+tokens/s 476.22444209072233
+2414.557203769684 s elapsed
+Epoch 2 399//571
+concept loss 0.22735015437496361
+grad_norm 2.614515878393051
+rel perplexity 1.1253469662381388
+root  perplexity 3.2788706048068206
+tokens/s 510.3138417590361
+2541.878860473633 s elapsed
+Epoch 2 456//571
+concept loss 0.19638610092686806
+grad_norm 3.475876694684576
+rel perplexity 1.1251784904412243
+root  perplexity 3.279263215254177
+tokens/s 488.6651130603715
+2673.9427242279053 s elapsed
+Epoch 2 513//571
+concept loss 0.2201702674852667
+grad_norm 2.7515629788431637
+rel perplexity 1.121969570933151
+root  perplexity 3.281821878110614
+tokens/s 472.44033288420616
+2814.951013803482 s elapsed
+Epoch 2 570//571
+concept loss 0.1550083281217265
+grad_norm 2.9274841411045966
+rel perplexity 1.1215842172457302
+root  perplexity 3.2771003724279213
+tokens/s 482.0609401101992
+2949.550186395645 s elapsed
+Training loss: 0.223356
+Posterior_ppl loss:  0.14408176931214284
+Root Training perplexity: 3.2771
+Role Training perplexity: 1.12801
+
+
+source [['taking', 'a', 'look'], ['take', 'a', 'look'], ['VBG', 'DT', 'NN'], ['O', 'O', 'O']]
+
+pre seq [Frame(take), (a), Frame(look)]
+
+pre srlseq [Frame(take-01), Frame(look-01)]
+
+re-ca gold [['Frame', 'look', '', '-01', 1, [2]], ['', '', '', '', 0, [-1, 3]], ['', '', '', '', 0, [-1, 3]]]
+
+pre triples [[Frame(take-01), Frame(look-01), ':ARG1', Var(t0)], [<s>(<s>), Frame(look-01), ':top', '<s>']]
+
+gold seq [Frame(look-01)]
+gold triples [[<s>(<s>), Frame(look-01), ':top']]
+
+
+
+Non_Sense
+T,P,TP: 23797 23659 20073
+Precesion,Recall,F1: 0.8484297730250645 0.8435096860948859 0.8459625758597439
+
+Full Concept
+T,P,TP: 23797 23659 19631
+Precesion,Recall,F1: 0.8297476647364639 0.8249359162919696 0.8273347943358059
+
+Nonsense REL Triple
+T,P,TP: 25362 24394 14449
+Precesion,Recall,F1: 0.5923177830614086 0.5697105906474252 0.580794276067208
+
+REL Triple
+T,P,TP: 25362 24394 13879
+Precesion,Recall,F1: 0.568951381487251 0.5472360223957101 0.5578824664362088
+
+Root
+T,P,TP: 1368 1368 740
+Precesion,Recall,F1: 0.5409356725146199 0.5409356725146199 0.5409356725146199
+
+Unlabeled Rel Triple
+T,P,TP: 25362 24394 14895
+Precesion,Recall,F1: 0.6106009674510126 0.5872959545777147 0.5987217621995337
+
+REL Triple given concept
+T,P,TP: 19033 19450 13879
+Precesion,Recall,F1: 0.713573264781491 0.7292071665002889 0.7213055115245693
+
+SRL Triple
+T,P,TP: 10435 9626 4921
+Precesion,Recall,F1: 0.5112196135466445 0.4715860086248203 0.49060365884053625
+
+Unlabled SRL Triple
+T,P,TP: 10435 9626 5348
+Precesion,Recall,F1: 0.5555786411801371 0.512505989458553 0.5331738198494591
+
+SRL Triple given concept
+T,P,TP: 7188 7156 4921
+Precesion,Recall,F1: 0.6876746785913919 0.684613244296049 0.6861405465699945
+
+Unlabeled SRL Triple given concept
+T,P,TP: 7188 7156 5348
+Precesion,Recall,F1: 0.7473448854108441 0.7440178074568725 0.7456776352481874
+saving best /home/amukherjee/amr-ibm/AMR_AS_GRAPH_PREDICTION/model/gpus_0valid_best.pt
+Validation F1: 0.689421
+Best Validation F1: 0.689421
+Epoch:  2
+
+Epoch 3 57//571
+concept loss 0.12636293754949562
+grad_norm 2.925865467421945
+rel perplexity 1.1139184609903452
+root  perplexity 3.2353350204683373
+tokens/s 469.86745715905175
+3354.002572774887 s elapsed
+Epoch 3 114//571
+concept loss 0.10470900631187444
+grad_norm 2.4902060316551347
+rel perplexity 1.1125113832125064
+root  perplexity 3.1806162461646355
+tokens/s 464.37022732183743
+3498.1418821811676 s elapsed
+Epoch 3 171//571
+concept loss 0.19693210315469187
+grad_norm 2.3758059833032306
+rel perplexity 1.1160019644708232
+root  perplexity 3.200937285500218
+tokens/s 510.3590886864094
+3626.077300786972 s elapsed
+Epoch 3 228//571
+concept loss 0.12256558876128573
+grad_norm 2.346298637073579
+rel perplexity 1.1155144634454868
+root  perplexity 3.2125479335754603
+tokens/s 471.8864375150135
+3764.695405483246 s elapsed
+Epoch 3 285//571
+concept loss 1.8389246283789116
+grad_norm 2.5166250202048217
+rel perplexity 1.1115031685759094
+root  perplexity 3.20679402155928
+tokens/s 477.86256933255044
+3900.1088235378265 s elapsed
+Epoch 3 342//571
+concept loss 0.09619164886456089
+grad_norm 2.5138411891965613
+rel perplexity 1.108885002847528
+root  perplexity 3.203660765596894
+tokens/s 440.4229277901097
+4049.764981985092 s elapsed
+Epoch 3 399//571
+concept loss 0.1060164882888161
+grad_norm 2.270542518459081
+rel perplexity 1.1117006968114749
+root  perplexity 3.2005834030348708
+tokens/s 507.97735100658934
+4177.189961671829 s elapsed
+Epoch 3 456//571
+concept loss 0.3676965029105665
+grad_norm 2.5577728305402214
+rel perplexity 1.1103338989160128
+root  perplexity 3.196915706875703
+tokens/s 480.1691707590206
+4311.634252548218 s elapsed
+Epoch 3 513//571
+concept loss 0.10943788003136924
+grad_norm 2.554102396354067
+rel perplexity 1.1102672922829486
+root  perplexity 3.1911233116166056
+tokens/s 440.9069333301646
+4459.1257038116455 s elapsed
+Epoch 3 570//571
+concept loss 0.09391634093254377
+grad_norm 2.893215037264097
+rel perplexity 1.1109887514308967
+root  perplexity 3.1905539653195847
+tokens/s 473.97199584290746
+4595.3721575737 s elapsed
+Training loss: 0.31378
+Posterior_ppl loss:  0.3318868813691747
+Root Training perplexity: 3.19055
+Role Training perplexity: 1.11215
+
+
+source [['Europe'], ['Europe'], ['NNP'], ['LOCATION']]
+
+pre seq [B_Ner_continent(Europe)]
+
+pre srlseq [Concept(continent), Concept(name), String(Europe)]
+
+re-ca gold [['B_Ner', 'Europe', 'continent', '', 1, [0]]]
+
+pre triples [[<s>(<s>), Concept(continent), ':top', '<s>'], [Concept(name), Concept(continent), ':name-of', Var(n1)], [Concept(name), String(Europe), ':op1', Var(n1)]]
+
+gold seq [Concept(continent), Concept(name), String(Europe)]
+gold triples [[Concept(name), Concept(continent), ':name-of'], [Concept(name), String(Europe), ':op1'], [<s>(<s>), Concept(continent), ':top']]
+
+
+
+Non_Sense
+T,P,TP: 23797 23772 20303
+Precesion,Recall,F1: 0.8540720174995793 0.8531747699289827 0.8536231579389938
+
+Full Concept
+T,P,TP: 23797 23772 19853
+Precesion,Recall,F1: 0.8351421840821134 0.8342648232970542 0.8347032731400702
+
+Nonsense REL Triple
+T,P,TP: 25362 24198 14851
+Precesion,Recall,F1: 0.613728407306389 0.5855610756249507 0.5993139628732849
+
+REL Triple
+T,P,TP: 25362 24198 14221
+Precesion,Recall,F1: 0.5876931977849409 0.5607207633467393 0.5738902340597256
+
+Root
+T,P,TP: 1368 1368 747
+Precesion,Recall,F1: 0.5460526315789473 0.5460526315789473 0.5460526315789473
+
+Unlabeled Rel Triple
+T,P,TP: 25362 24198 15154
+Precesion,Recall,F1: 0.6262501033143235 0.5975080829587572 0.611541565778854
+
+REL Triple given concept
+T,P,TP: 19309 19337 14221
+Precesion,Recall,F1: 0.7354294875109892 0.7364959345382982 0.7359623246907829
+
+SRL Triple
+T,P,TP: 10435 9542 5055
+Precesion,Recall,F1: 0.5297631523789562 0.4844274077623383 0.5060819942934375
+
+Unlabled SRL Triple
+T,P,TP: 10435 9542 5443
+Precesion,Recall,F1: 0.5704254873192203 0.5216099664590321 0.5449266656655153
+
+SRL Triple given concept
+T,P,TP: 7293 7092 5055
+Precesion,Recall,F1: 0.7127749576988156 0.693130399012752 0.7028154327424402
+
+Unlabeled SRL Triple given concept
+T,P,TP: 7293 7092 5443
+Precesion,Recall,F1: 0.7674844895657078 0.7463320992732757 0.756760514424748
+saving best /home/amukherjee/amr-ibm/AMR_AS_GRAPH_PREDICTION/model/gpus_0valid_best.pt
+Validation F1: 0.701624
+Best Validation F1: 0.701624
+Epoch:  3
+
+Epoch 4 57//571
+concept loss 0.07031804433618608
+grad_norm 2.3730282592798435
+rel perplexity 1.1029998306184237
+root  perplexity 3.1849025209876527
+tokens/s 509.0616342576154
+4949.615265369415 s elapsed
+Epoch 4 114//571
+concept loss 0.06200105440025799
+grad_norm 2.3775065125955623
+rel perplexity 1.102873061825551
+root  perplexity 3.1645385561675736
+tokens/s 473.9690912634809
+5086.225447177887 s elapsed
+Epoch 4 171//571
+concept loss 0.03826917729541436
+grad_norm 2.768871096039289
+rel perplexity 1.1001484777937645
+root  perplexity 3.1915092725688323
+tokens/s 462.6481070989754
+5232.807703733444 s elapsed
+Epoch 4 228//571
+concept loss 0.8696390295149623
+grad_norm 2.618057147831435
+rel perplexity 1.0963628065225262
+root  perplexity 3.1814696841688694
+tokens/s 454.8662453884248
+5381.033705234528 s elapsed
+Epoch 4 285//571
+concept loss 0.038272669622481735
+grad_norm 2.5964843290262696
+rel perplexity 1.1028318872288692
+root  perplexity 3.1655805905095242
+tokens/s 468.5659176774028
+5520.787795543671 s elapsed
+Epoch 4 342//571
+concept loss 0.049896611526607106
+grad_norm 2.3746686147559557
+rel perplexity 1.103519341960843
+root  perplexity 3.1785113267228198
+tokens/s 512.2461499074393
+5648.691161155701 s elapsed
+Epoch 4 399//571
+concept loss 0.06060747914582854
+grad_norm 3.0577623513722627
+rel perplexity 1.1033630393305345
+root  perplexity 3.173684543407902
+tokens/s 493.69800098793354
+5781.997359752655 s elapsed
+Epoch 4 456//571
+concept loss 0.0951897237093746
+grad_norm 2.0395255974278332
+rel perplexity 1.1047659145380555
+root  perplexity 3.1754422244216687
+tokens/s 483.8699345923681
+5914.644583463669 s elapsed
+Epoch 4 513//571
+concept loss 46320.45345427377
+grad_norm 2.9992398103496467
+rel perplexity 1.102459338559803
+root  perplexity 3.166023576642311
+tokens/s 486.36576876299307
+6048.572602272034 s elapsed
+Epoch 4 570//571
+concept loss 0.05664874630362603
+grad_norm 2.634699825846943
+rel perplexity 1.1043771153493114
+root  perplexity 3.1501992075393193
+tokens/s 477.9944191694439
+6179.823098659515 s elapsed
+Training loss: 4604.78
+Posterior_ppl loss:  4604.856492242481
+Root Training perplexity: 3.1502
+Role Training perplexity: 1.10226
+
+
+source [['International', ';', 'weapons'], ['International', ';', 'weapon'], ['NNP', ':', 'NNS'], ['O', 'O', 'O']]
+
+pre seq [Concept(international), Concept(and), Concept(weapon)]
+
+pre srlseq [Concept(international), Concept(and), Concept(weapon)]
+
+re-ca gold [['Concept', 'and', '', '', 1, [1]], ['Concept', 'international', '', '', 1, [0]], ['Concept', 'weapon', '', '', 1, [2]]]
+
+pre triples [[Concept(and), Concept(international), ':op1', Var(a1)], [Concept(and), Concept(weapon), ':op2', Var(a1)], [<s>(<s>), Concept(and), ':top', '<s>']]
+
+gold seq [Concept(and), Concept(international), Concept(weapon)]
+gold triples [[Concept(and), Concept(international), ':op1'], [Concept(and), Concept(weapon), ':op2'], [<s>(<s>), Concept(and), ':top']]
+
+
+
+Non_Sense
+T,P,TP: 23797 23679 20309
+Precesion,Recall,F1: 0.8576798006672579 0.8534269025507417 0.8555480663914399
+
+Full Concept
+T,P,TP: 23797 23679 19861
+Precesion,Recall,F1: 0.8387600827737658 0.8346010001260663 0.8366753728199512
+
+Nonsense REL Triple
+T,P,TP: 25362 24642 15285
+Precesion,Recall,F1: 0.620282444606769 0.6026732907499408 0.6113510919126469
+
+REL Triple
+T,P,TP: 25362 24642 14632
+Precesion,Recall,F1: 0.5937829721613506 0.5769261099282391 0.5852331813454924
+
+Root
+T,P,TP: 1368 1368 762
+Precesion,Recall,F1: 0.5570175438596491 0.5570175438596491 0.5570175438596491
+
+Unlabeled Rel Triple
+T,P,TP: 25362 24642 15527
+Precesion,Recall,F1: 0.630103076049022 0.6122151249901427 0.621030317574594
+
+REL Triple given concept
+T,P,TP: 19350 19801 14632
+Precesion,Recall,F1: 0.7389525781526185 0.7561757105943152 0.7474649434241782
+
+SRL Triple
+T,P,TP: 10435 9751 5328
+Precesion,Recall,F1: 0.5464054968721157 0.5105893627216099 0.5278906172594867
+
+Unlabled SRL Triple
+T,P,TP: 10435 9751 5668
+Precesion,Recall,F1: 0.5812737155163573 0.5431720172496406 0.5615773308233429
+
+SRL Triple given concept
+T,P,TP: 7334 7328 5328
+Precesion,Recall,F1: 0.7270742358078602 0.7264794109626398 0.7267767016778065
+
+Unlabeled SRL Triple given concept
+T,P,TP: 7334 7328 5668
+Precesion,Recall,F1: 0.773471615720524 0.7728388328333787 0.7731550948028919
+saving best /home/amukherjee/amr-ibm/AMR_AS_GRAPH_PREDICTION/model/gpus_0valid_best.pt
+Validation F1: 0.707694
+Best Validation F1: 0.707694
+Epoch:  4
+
+Epoch 5 57//571
+concept loss 0.014457687007271791
+grad_norm 2.186525522289901
+rel perplexity 1.0961209735961812
+root  perplexity 3.0768979228368227
+tokens/s 474.88915863557804
+6489.250506401062 s elapsed
+Epoch 5 114//571
+concept loss 19.603025438878518
+grad_norm 2.3339695066748214
+rel perplexity 1.0924782560249697
+root  perplexity 3.159104566070122
+tokens/s 462.8114535447494
+6635.655706644058 s elapsed
+Epoch 5 171//571
+concept loss 0.014157145698371766
+grad_norm 2.170360175394723
+rel perplexity 1.0941233981627232
+root  perplexity 3.129212037295447
+tokens/s 476.21005030412965
+6772.786376953125 s elapsed
+Epoch 5 228//571
+concept loss 0.02324837759434557
+grad_norm 3.1563596414786845
+rel perplexity 1.0944848470583284
+root  perplexity 3.1057983094710617
+tokens/s 472.4042588483396
+6909.182276248932 s elapsed
+Epoch 5 285//571
+concept loss 0.32381885512256664
+grad_norm 2.149633400949777
+rel perplexity 1.09278398120465
+root  perplexity 3.105594952543761
+tokens/s 454.95758110043886
+7054.688161849976 s elapsed
+Epoch 5 342//571
+concept loss -0.018138518442830896
+grad_norm 2.241965252093004
+rel perplexity 1.0945254641503437
+root  perplexity 3.1198972956416573
+tokens/s 443.19664989010704
+7205.163133859634 s elapsed
+Epoch 5 399//571
+concept loss 0.029099621739456693
+grad_norm 2.231479378055487
+rel perplexity 1.098276176816844
+root  perplexity 3.11752694455683
+tokens/s 515.1835126063748
+7331.593818187714 s elapsed
+Epoch 5 456//571
+concept loss 0.022004850900335337
+grad_norm 2.287907488097549
+rel perplexity 1.096170028502611
+root  perplexity 3.11235572957734
+tokens/s 475.28014731409075
+7468.799225568771 s elapsed
+Epoch 5 513//571
+concept loss 0.017282073885486415
+grad_norm 1.9857357719914066
+rel perplexity 1.0942000181981095
+root  perplexity 3.1030092499479185
+tokens/s 473.93597911963695
+7606.075158834457 s elapsed
+Epoch 5 570//571
+concept loss 0.008282237202051918
+grad_norm 2.5610673830533557
+rel perplexity 1.0948546731414963
+root  perplexity 3.0980328875132472
+tokens/s 481.0734063134442
+7739.732523679733 s elapsed
+Training loss: 2.0707
+Posterior_ppl loss:  2.1868324986421883
+Root Training perplexity: 3.09803
+Role Training perplexity: 1.09476
+
+
+source [['(', 'End', ')'], ['(', 'end', ')'], ['NN', 'NN', 'CD'], ['O', 'O', 'NUMBER']]
+
+pre seq [((), Frame(end), ())]
+
+pre srlseq [Frame(end-01)]
+
+re-ca gold [['Frame', 'end', '', '-01', 1, [1]], ['', '', '', '', 0, [-1, 3]], ['', '', '', '', 0, [-1, 3]]]
+
+pre triples
